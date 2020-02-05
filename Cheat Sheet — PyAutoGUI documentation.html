@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://pyautogui.readthedocs.io/en/latest/quickstart.html -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Cheat Sheet — PyAutoGUI  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script async="" src="./Cheat Sheet — PyAutoGUI documentation_files/analytics.js.download"></script><script type="text/javascript" src="./Cheat Sheet — PyAutoGUI documentation_files/modernizr.min.js.download"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="./Cheat Sheet — PyAutoGUI documentation_files/documentation_options.js.download"></script>
+        <script type="text/javascript" src="./Cheat Sheet — PyAutoGUI documentation_files/jquery.js.download"></script>
+        <script type="text/javascript" src="./Cheat Sheet — PyAutoGUI documentation_files/underscore.js.download"></script>
+        <script type="text/javascript" src="./Cheat Sheet — PyAutoGUI documentation_files/doctools.js.download"></script>
+        <script type="text/javascript" src="./Cheat Sheet — PyAutoGUI documentation_files/language_data.js.download"></script>
+        <script type="text/javascript" src="./Cheat Sheet — PyAutoGUI documentation_files/readthedocs-doc-embed.js.download"></script>
+    
+    <script type="text/javascript" src="./Cheat Sheet — PyAutoGUI documentation_files/theme.js.download"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="./Cheat Sheet — PyAutoGUI documentation_files/theme.css" type="text/css">
+  <link rel="stylesheet" href="./Cheat Sheet — PyAutoGUI documentation_files/pygments.css" type="text/css">
+    <link rel="index" title="Index" href="https://pyautogui.readthedocs.io/en/latest/genindex.html">
+    <link rel="search" title="Search" href="https://pyautogui.readthedocs.io/en/latest/search.html">
+    <link rel="next" title="Mouse Control Functions" href="https://pyautogui.readthedocs.io/en/latest/mouse.html">
+    <link rel="prev" title="Installation" href="https://pyautogui.readthedocs.io/en/latest/install.html"> 
+
+<!-- RTD Extra Head -->
+
+<!-- 
+Always link to the latest version, as canonical.
+http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html">
+
+<link rel="stylesheet" href="./Cheat Sheet — PyAutoGUI documentation_files/readthedocs-doc-embed.css" type="text/css">
+
+<script type="text/javascript" src="./Cheat Sheet — PyAutoGUI documentation_files/readthedocs-data.js.download"></script>
+
+<!-- Add page-specific data, which must exist in the page js, not global -->
+<script type="text/javascript">
+READTHEDOCS_DATA['page'] = "quickstart"
+READTHEDOCS_DATA['source_suffix'] = ".rst"
+</script>
+
+<script type="text/javascript" src="./Cheat Sheet — PyAutoGUI documentation_files/readthedocs-analytics.js.download"></script>
+
+<!-- end RTD <extrahead> -->
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="https://pyautogui.readthedocs.io/en/latest/index.html" class="icon icon-home"> PyAutoGUI
+          
+
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="https://pyautogui.readthedocs.io/en/latest/search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="https://pyautogui.readthedocs.io/en/latest/install.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal current" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html#"><span class="toctree-expand"></span>Cheat Sheet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html#general-functions">General Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html#fail-safes">Fail-Safes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html#mouse-functions">Mouse Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html#keyboard-functions">Keyboard Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html#message-box-functions">Message Box Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html#screenshot-functions">Screenshot Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://pyautogui.readthedocs.io/en/latest/mouse.html">Mouse Control Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pyautogui.readthedocs.io/en/latest/keyboard.html">Keyboard Control Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pyautogui.readthedocs.io/en/latest/msgbox.html">Message Box Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pyautogui.readthedocs.io/en/latest/screenshot.html">Screenshot Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pyautogui.readthedocs.io/en/latest/tests.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pyautogui.readthedocs.io/en/latest/roadmap.html">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pyautogui.readthedocs.io/en/latest/source/modules.html">pyautogui</a></li>
+</ul>
+
+            
+          
+        </div>
+      <div id="rtd-32lkkmy2" class="ethical-rtd ethical-dark-theme"><div class="ethical-sidebar"><div class="ethical-content"><a href="https://server.ethicalads.io/proxy/click/827/xVHLULPX7Xp6xrYh/" rel="nofollow" target="_blank" class="ethical-image-link"><img src="./Cheat Sheet — PyAutoGUI documentation_files/pycon-namibia.png"></a><div class="ethical-text"><a href="https://server.ethicalads.io/proxy/click/827/xVHLULPX7Xp6xrYh/" rel="nofollow" target="_blank">Join us for PyCon Namibia on February 18-20 in Windhoek 🇳🇦</a></div></div><div class="ethical-callout"><small><em><a href="https://readthedocs.org/sustainability/advertising/">Sponsored</a><span> · </span><a href="https://docs.readthedocs.io/en/latest/ethical-advertising.html">Ads served ethically</a></em></small></div></div></div></div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="https://pyautogui.readthedocs.io/en/latest/index.html">PyAutoGUI</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="https://pyautogui.readthedocs.io/en/latest/index.html">Docs</a> »</li>
+        
+      <li>Cheat Sheet</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/asweigart/pyautogui/blob/master/docs/quickstart.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cheat-sheet">
+<h1>Cheat Sheet<a class="headerlink" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html#cheat-sheet" title="Permalink to this headline">¶</a></h1>
+<p>This is a quickstart reference to using PyAutoGUI. PyAutoGUI is cross-platform GUI automation module that works on Python 2 &amp; 3. You can control the mouse and keyboard as well as perform basic image recognition to automate tasks on your computer.</p>
+<p><strong>All the keyword arguments in the examples on this page are optional.</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyautogui</span>
+</pre></div>
+</div>
+<p>PyAutoGUI works on Windows/Mac/Linux and on Python 2 &amp; 3. Install from PyPI with <code class="code docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pyautogui</span></code>.</p>
+<div class="section" id="general-functions">
+<h2>General Functions<a class="headerlink" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html#general-functions" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">position</span><span class="p">()</span>  <span class="c1"># current mouse x and y</span>
+<span class="go">(968, 56)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>  <span class="c1"># current screen resolution width and height</span>
+<span class="go">(1920, 1080)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">onScreen</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>  <span class="c1"># True if x &amp; y are within the screen.</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="fail-safes">
+<h2>Fail-Safes<a class="headerlink" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html#fail-safes" title="Permalink to this headline">¶</a></h2>
+<p>Set up a 2.5 second pause after each PyAutoGUI call:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyautogui</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">PAUSE</span> <span class="o">=</span> <span class="mf">2.5</span>
+</pre></div>
+</div>
+<p>When fail-safe mode is <code class="code docutils literal notranslate"><span class="pre">True</span></code>, moving the mouse to the upper-left will raise a <code class="code docutils literal notranslate"><span class="pre">pyautogui.FailSafeException</span></code> that can abort your program:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyautogui</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">FAILSAFE</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="mouse-functions">
+<h2>Mouse Functions<a class="headerlink" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html#mouse-functions" title="Permalink to this headline">¶</a></h2>
+<p>XY coordinates have 0, 0 origin at top left corner of the screen. X increases going right, Y increases going down.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">num_seconds</span><span class="p">)</span>  <span class="c1"># move mouse to XY coordinates over num_second seconds</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">moveRel</span><span class="p">(</span><span class="n">xOffset</span><span class="p">,</span> <span class="n">yOffset</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">num_seconds</span><span class="p">)</span>  <span class="c1"># move mouse relative to its current position</span>
+</pre></div>
+</div>
+<p>If <code class="code docutils literal notranslate"><span class="pre">duration</span></code> is 0 or unspecified, movement is immediate. Note: dragging on Mac can’t be immediate.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">dragTo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">num_seconds</span><span class="p">)</span>  <span class="c1"># drag mouse to XY</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">dragRel</span><span class="p">(</span><span class="n">xOffset</span><span class="p">,</span> <span class="n">yOffset</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">num_seconds</span><span class="p">)</span>  <span class="c1"># drag mouse relative to its current position</span>
+</pre></div>
+</div>
+<p>Calling <code class="code docutils literal notranslate"><span class="pre">click()</span></code> just clicks the mouse once with the left button at the mouse’s current location, but the keyword arguments can change that:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">click</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">,</span> <span class="n">clicks</span><span class="o">=</span><span class="n">num_of_clicks</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="n">secs_between_clicks</span><span class="p">,</span> <span class="n">button</span><span class="o">=</span><span class="s1">'left'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <code class="code docutils literal notranslate"><span class="pre">button</span></code> keyword argument can be <code class="code docutils literal notranslate"><span class="pre">'left'</span></code>, <code class="code docutils literal notranslate"><span class="pre">'middle'</span></code>, or <code class="code docutils literal notranslate"><span class="pre">'right'</span></code>.</p>
+<p>All clicks can be done with <code class="code docutils literal notranslate"><span class="pre">click()</span></code>, but these functions exist for readability. Keyword args are optional:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">rightClick</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">middleClick</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">doubleClick</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">tripleClick</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Positive scrolling will scroll up, negative scrolling will scroll down:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">amount_to_scroll</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Individual button down and up events can be called separately:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">mouseDown</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">,</span> <span class="n">button</span><span class="o">=</span><span class="s1">'left'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">mouseUp</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">,</span> <span class="n">button</span><span class="o">=</span><span class="s1">'left'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="keyboard-functions">
+<h2>Keyboard Functions<a class="headerlink" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html#keyboard-functions" title="Permalink to this headline">¶</a></h2>
+<p>Key presses go to wherever the keyboard cursor is at function-calling time.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">typewrite</span><span class="p">(</span><span class="s1">'Hello world!</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="n">secs_between_keys</span><span class="p">)</span>  <span class="c1"># useful for entering text, newline is Enter</span>
+</pre></div>
+</div>
+<p>A list of key names can be passed too:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">typewrite</span><span class="p">([</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">,</span> <span class="s1">'left'</span><span class="p">,</span> <span class="s1">'backspace'</span><span class="p">,</span> <span class="s1">'enter'</span><span class="p">,</span> <span class="s1">'f1'</span><span class="p">],</span> <span class="n">interval</span><span class="o">=</span><span class="n">secs_between_keys</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The full list of key names is in <code class="code docutils literal notranslate"><span class="pre">pyautogui.KEYBOARD_KEYS</span></code>.</p>
+<p>Keyboard hotkeys like Ctrl-S or Ctrl-Shift-1 can be done by passing a list of key names to <code class="code docutils literal notranslate"><span class="pre">hotkey()</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">hotkey</span><span class="p">(</span><span class="s1">'ctrl'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">)</span>  <span class="c1"># ctrl-c to copy</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">hotkey</span><span class="p">(</span><span class="s1">'ctrl'</span><span class="p">,</span> <span class="s1">'v'</span><span class="p">)</span>  <span class="c1"># ctrl-v to paste</span>
+</pre></div>
+</div>
+<p>Individual button down and up events can be called separately:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">keyDown</span><span class="p">(</span><span class="n">key_name</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">keyUp</span><span class="p">(</span><span class="n">key_name</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="message-box-functions">
+<h2>Message Box Functions<a class="headerlink" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html#message-box-functions" title="Permalink to this headline">¶</a></h2>
+<p>If you need to pause the program until the user clicks OK on something, or want to display some information to the user, the message box functions have similar names that JavaScript has:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">alert</span><span class="p">(</span><span class="s1">'This displays some text with an OK button.'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">confirm</span><span class="p">(</span><span class="s1">'This displays text and has an OK and Cancel button.'</span><span class="p">)</span>
+<span class="go">'OK'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">prompt</span><span class="p">(</span><span class="s1">'This lets the user type in a string and press OK.'</span><span class="p">)</span>
+<span class="go">'This is what I typed in.'</span>
+</pre></div>
+</div>
+<p>The <code class="code docutils literal notranslate"><span class="pre">prompt()</span></code> function will return <code class="code docutils literal notranslate"><span class="pre">None</span></code> if the user clicked Cancel.</p>
+</div>
+<div class="section" id="screenshot-functions">
+<h2>Screenshot Functions<a class="headerlink" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html#screenshot-functions" title="Permalink to this headline">¶</a></h2>
+<p>PyAutoGUI uses Pillow/PIL for its image-related data.</p>
+<p>On Linux, you must run <code class="code docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">scrot</span></code> to use the screenshot features.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">screenshot</span><span class="p">()</span>  <span class="c1"># returns a Pillow/PIL Image object</span>
+<span class="go">&lt;PIL.Image.Image image mode=RGB size=1920x1080 at 0x24C3EF0&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">screenshot</span><span class="p">(</span><span class="s1">'foo.png'</span><span class="p">)</span>  <span class="c1"># returns a Pillow/PIL Image object, and saves it to a file</span>
+<span class="go">&lt;PIL.Image.Image image mode=RGB size=1920x1080 at 0x31AA198&gt;</span>
+</pre></div>
+</div>
+<p>If you have an image file of something you want to click on, you can find it on the screen with <code class="code docutils literal notranslate"><span class="pre">locateOnScreen()</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">locateOnScreen</span><span class="p">(</span><span class="s1">'looksLikeThis.png'</span><span class="p">)</span>  <span class="c1"># returns (left, top, width, height) of first place it is found</span>
+<span class="go">(863, 417, 70, 13)</span>
+</pre></div>
+</div>
+<p>The <code class="code docutils literal notranslate"><span class="pre">locateAllOnScreen()</span></code> function will return a generator for all the locations it is found on the screen:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pyautogui</span><span class="o">.</span><span class="n">locateAllOnScreen</span><span class="p">(</span><span class="s1">'looksLikeThis.png'</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">...</span>
+<span class="go">(863, 117, 70, 13)</span>
+<span class="go">(623, 137, 70, 13)</span>
+<span class="go">(853, 577, 70, 13)</span>
+<span class="go">(883, 617, 70, 13)</span>
+<span class="go">(973, 657, 70, 13)</span>
+<span class="go">(933, 877, 70, 13)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">pyautogui</span><span class="o">.</span><span class="n">locateAllOnScreen</span><span class="p">(</span><span class="s1">'looksLikeThis.png'</span><span class="p">))</span>
+<span class="go">[(863, 117, 70, 13), (623, 137, 70, 13), (853, 577, 70, 13), (883, 617, 70, 13), (973, 657, 70, 13), (933, 877, 70, 13)]</span>
+</pre></div>
+</div>
+<p>The <code class="code docutils literal notranslate"><span class="pre">locateCenterOnScreen()</span></code> function just returns the XY coordinates of the middle of where the image is found on the screen:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">locateCenterOnScreen</span><span class="p">(</span><span class="s1">'looksLikeThis.png'</span><span class="p">)</span>  <span class="c1"># returns center x and y</span>
+<span class="go">(898, 423)</span>
+</pre></div>
+</div>
+<p>These functions return <code class="code docutils literal notranslate"><span class="pre">None</span></code> if the image couldn’t be found on the screen.</p>
+<p>Note: The locate functions are slow and can take a full second or two.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="https://pyautogui.readthedocs.io/en/latest/mouse.html" class="btn btn-neutral float-right" title="Mouse Control Functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="https://pyautogui.readthedocs.io/en/latest/install.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr><div><div id="rtd-qekick6m" class="ethical-rtd"></div></div>
+
+  <div role="contentinfo">
+    <p>
+        © Copyright 2019, Al Sweigart
+      
+        <span class="commit">
+          Revision <code>ae441d85</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org/">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions"><!-- Inserted RTD Footer -->
+
+<div class="injected">
+
+  
+
+      
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+         <strong> 
+        <dd><a href="https://pyautogui.readthedocs.io/en/latest/quickstart.html">latest</a></dd>
+         </strong> 
+        
+      </dl>
+      
+      
+
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="https://pyautogui.readthedocs.io/_/downloads/en/latest/pdf/">PDF</a></dd>
+        
+        <dd><a href="https://pyautogui.readthedocs.io/_/downloads/en/latest/htmlzip/">HTML</a></dd>
+        
+        <dd><a href="https://pyautogui.readthedocs.io/_/downloads/en/latest/epub/">Epub</a></dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <!-- These are kept as relative links for internal installs that are http -->
+        <dt>On Read the Docs</dt>
+        <dd>
+          <a href="https://readthedocs.org/projects/pyautogui/">Project Home</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/pyautogui/builds/">Builds</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/pyautogui/downloads/">Downloads</a>
+        </dd>
+      </dl>
+      
+
+      
+
+      
+      <dl>
+        <dt>On GitHub</dt>
+        <dd>
+          <a href="https://github.com/asweigart/pyautogui/blob/master/docs/quickstart.rst">View</a>
+        </dd>
+        
+        <dd>
+          <a href="https://github.com/asweigart/pyautogui/edit/master/docs/quickstart.rst">Edit</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <dt>Search</dt>
+        <dd>
+          <div style="padding: 6px;">
+            <form id="flyout-search-form" class="wy-form" target="_blank" action="https://readthedocs.org/projects/pyautogui/search/" method="get">
+              <input type="text" name="q" placeholder="Search docs">
+              </form>
+          </div>
+        </dd>
+      </dl>
+      
+
+
+
+      <hr>
+      
+        <small>
+          <span>Hosted by <a href="https://readthedocs.org/">Read the Docs</a></span>
+          <span> · </span>
+          <a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+        </small>
+      
+
+      
+
+</div>
+</div>
+  </div>
+
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+   
+
+
+<div id="rtd-jk85qwct"></div></body></html>
